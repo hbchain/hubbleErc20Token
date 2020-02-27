@@ -76,7 +76,7 @@ contract UnboundedRegularToken is RegularToken {
             Transfer(_from, _to, _value);
             return true;
         } else {
-            return false;
+            revert();
         }
     }
 }
